@@ -86,12 +86,12 @@ public class Board {
         // Construct a String that represents the Board object's 2D array. Return
         // the fully constructed String.
 //        " " used these as short spaces characters for alignment purposes
-        String result = "   0   1   2   3   4   5   6   7 \n";
+        String result = " 0 1 2 3 4 5 6 7 \n";
         for (int i = 0; i < board.length; i++) {
             result += i + " |";
             for (int j = 0; j < board.length; j++) {
                 if (this.getPiece(i,j) == null){
-                    result += "     " + "|";
+                    result += " " + "|";
                 }
                 else {
 //                    place the piece
